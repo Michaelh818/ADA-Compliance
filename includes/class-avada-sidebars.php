@@ -39,8 +39,8 @@ class Avada_Sidebars {
 				'description'   => __( 'Default Sidebar of Avada', 'Avada' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
-				'before_title'  => '<div class="heading"><h4 class="widget-title">',
-				'after_title'   => '</h4></div>',
+				'before_title'  => '<div class="heading"><h3 class="widget-title">',
+				'after_title'   => '</h3></div>',
 			]
 		);
 
@@ -60,8 +60,8 @@ class Avada_Sidebars {
 					'id'            => 'avada-footer-widget-' . $i,
 					'before_widget' => '<section id="%1$s" class="fusion-footer-widget-column widget %2$s">',
 					'after_widget'  => '<div style="clear:both;"></div></section>',
-					'before_title'  => '<h4 class="widget-title">',
-					'after_title'   => '</h4>',
+					'before_title'  => '<h3 class="widget-title">',
+					'after_title'   => '</h3>',
 				]
 			);
 
@@ -83,8 +83,8 @@ class Avada_Sidebars {
 					'id'            => 'avada-slidingbar-widget-' . $i,
 					'before_widget' => '<section id="%1$s" class="fusion-slidingbar-widget-column widget %2$s">',
 					'after_widget'  => '<div style="clear:both;"></div></section>',
-					'before_title'  => '<h4 class="widget-title">',
-					'after_title'   => '</h4>',
+					'before_title'  => '<h3 class="widget-title">',
+					'after_title'   => '</h3>',
 				]
 			);
 
