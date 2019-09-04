@@ -81,8 +81,8 @@ class Sidebar_Generator {
 						'id'            => 'avada-custom-sidebar-' . strtolower( $sidebar_class ),
 						'before_widget' => '<div id="%1$s" class="widget %2$s">',
 						'after_widget'  => '</div>',
-						'before_title'  => '<div class="heading"><h4 class="widget-title">',
-						'after_title'   => '</h4></div>',
+						'before_title'  => '<div class="heading"><h3 class="widget-title">',
+						'after_title'   => '</h3></div>',
 					]
 				);
 			}
