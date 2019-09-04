@@ -20,16 +20,16 @@ $displayed_menu = get_post_meta( $c_page_id, 'pyre_displayed_menu', true );
 	<div class="fusion-mobile-menu-icons">
 		<?php // Make sure mobile menu toggle is not loaded when ubermenu is used. ?>
 		<?php if ( ! function_exists( 'ubermenu_get_menu_instance_by_theme_location' ) || ( function_exists( 'ubermenu_get_menu_instance_by_theme_location' ) && ( ! ubermenu_get_menu_instance_by_theme_location( 'main_navigation' ) || ( ubermenu_get_menu_instance_by_theme_location( 'main_navigation' ) && function_exists( 'ubermenu_op' ) && 'on' === ubermenu_op( 'disable_mobile', 'main' ) && has_nav_menu( 'mobile_navigation' ) ) ) ) ) : ?>
-			<a href="#" class="fusion-icon fusion-icon-bars" aria-label="<?php esc_attr_e( 'Toggle mobile menu', 'Avada' ); ?>" aria-expanded="false"></a>
+			<span class="fusion-icon fusion-icon-bars" aria-label="<?php esc_attr_e( 'Toggle mobile menu', 'Avada' ); ?>" aria-expanded="false"></span>
 		<?php endif; ?>
 
 		<?php if ( Avada()->settings->get( 'mobile_menu_search' ) ) : ?>
-			<a href="#" class="fusion-icon fusion-icon-search" aria-label="<?php esc_attr_e( 'Toggle mobile search', 'Avada' ); ?>"></a>
+			<span class="fusion-icon fusion-icon-search" aria-label="<?php esc_attr_e( 'Toggle mobile search', 'Avada' ); ?>"></span>
 		<?php endif; ?>
 
 		<?php if ( 'menu' === Avada()->settings->get( 'slidingbar_toggle_style' ) && Avada()->settings->get( 'mobile_slidingbar_widgets' ) ) : ?>
 			<?php $sliding_bar_label = esc_attr__( 'Toggle Sliding Bar', 'Avada' ); ?>
-			<a href="#" class="fusion-icon fusion-icon-sliding-bar" aria-label="<?php echo esc_attr( $sliding_bar_label ); ?>"></a>
+			<span class="fusion-icon fusion-icon-sliding-bar" aria-label="<?php echo esc_attr( $sliding_bar_label ); ?>"></span>
 		<?php endif; ?>
 
 		<?php if ( class_exists( 'WooCommerce' ) && Avada()->settings->get( 'woocommerce_cart_link_main_nav' ) ) : ?>
