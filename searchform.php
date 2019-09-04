@@ -20,7 +20,7 @@ $is_live_search = Avada()->settings->get( 'live_search' );
 				<?php if ( $is_live_search ) : ?>
 					<input type="search" class="s fusion-live-search-input" name="s" id="fusion-live-search-input" autocomplete="off" placeholder="<?php esc_html_e( 'Search ...', 'Avada' ); ?>" required aria-required="true" aria-label="<?php esc_html_e( 'Search ...', 'Avada' ); ?>"/>
 				<?php else : ?>
-					<input type="search" value="" name="s" class="s"  placeholder="<?php esc_html_e( 'Search ...', 'Avada' ); ?>" required aria-required="true" aria-label="<?php esc_html_e( 'Search ...', 'Avada' ); ?>"/>
+					<input id="s" type="search" value="" name="s" class="s"  placeholder="<?php esc_html_e( 'Search ...', 'Avada' ); ?>" required aria-required="true" aria-label="<?php esc_html_e( 'Search ...', 'Avada' ); ?>"/>
 				<?php endif; ?>
 			</label>
 		</div>
