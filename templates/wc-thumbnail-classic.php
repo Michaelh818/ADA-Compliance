@@ -56,8 +56,8 @@ if ( $attachment_image ) {
 	<?php echo $attachment_image; // phpcs:ignore WordPress.Security.EscapeOutput ?>
 	<?php echo $thumb_image; // phpcs:ignore WordPress.Security.EscapeOutput ?>
 	<?php if ( $in_cart ) : ?>
-		<div class="cart-loading"><i class="fusion-icon-check-square-o"></i></div>
+		<div class="cart-loading"><em class="fusion-icon-check-square-o"></em></div>
 	<?php else : ?>
-		<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
+		<div class="cart-loading"><em class="fusion-icon-spinner"></em></div>
 	<?php endif; ?>
 </div>
