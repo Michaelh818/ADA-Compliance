@@ -34,8 +34,8 @@
 
 								<div class="ai1ec-event-header">
 									<div class="ai1ec-event-toggle">
-										<i class="ai1ec-fa ai1ec-fa-minus-circle ai1ec-fa-lg"></i>
-										<i class="ai1ec-fa ai1ec-fa-plus-circle ai1ec-fa-lg"></i>
+										<em class="ai1ec-fa ai1ec-fa-minus-circle ai1ec-fa-lg"></em>
+										<em class="ai1ec-fa ai1ec-fa-plus-circle ai1ec-fa-lg"></em>
 									</div>
 									<span class="ai1ec-event-title">
 										{{ event.filtered_title | raw }}
@@ -82,7 +82,7 @@
 											<a class="ai1ec-read-more ai1ec-btn ai1ec-btn-default
 												ai1ec-load-event"
 												href="{{ event.permalink | e('html_attr') }}">
-												{{ text_read_more }} <i class="ai1ec-fa ai1ec-fa-arrow-right"></i>
+												{{ text_read_more }} <em class="ai1ec-fa ai1ec-fa-arrow-right"></em>
 											</a>
 										</div>
 										{% set categories = event.categories_html %}
@@ -99,7 +99,7 @@
 										{% if tags is not empty %}
 											<span class="ai1ec-tags">
 												<span class="ai1ec-field-label">
-													<i class="ai1ec-fa ai1ec-fa-tags"></i>
+													<em class="ai1ec-fa ai1ec-fa-tags"></em>
 													{{ text_tags }}
 												</span>
 												{{ tags | raw }}
