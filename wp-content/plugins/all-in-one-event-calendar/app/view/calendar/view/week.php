@@ -179,7 +179,7 @@ class Ai1ec_Calendar_View_Week extends Ai1ec_Calendar_View_Abstract {
         $links[] = array(
             'enabled' => true,
             'class'=> 'ai1ec-prev-week',
-            'text' => '<i class="ai1ec-fa ai1ec-fa-chevron-left"></i>',
+            'text' => '<em class="ai1ec-fa ai1ec-fa-chevron-left"></em>',
             'href' => $href->generate_href(),
         );
         // ======================
@@ -202,7 +202,7 @@ class Ai1ec_Calendar_View_Week extends Ai1ec_Calendar_View_Abstract {
         $links[] = array(
             'enabled' => true,
             'class'=> 'ai1ec-next-week',
-            'text' => '<i class="ai1ec-fa ai1ec-fa-chevron-right"></i>',
+            'text' => '<em class="ai1ec-fa ai1ec-fa-chevron-right"></em>',
             'href' => $href->generate_href(),
         );
 

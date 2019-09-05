@@ -459,7 +459,7 @@ class Ai1ec_Calendar_View_Agenda extends Ai1ec_Calendar_View_Abstract {
         );
         $links[] = array(
             'class'   => 'ai1ec-prev-page',
-            'text'    => '<i class="ai1ec-fa ai1ec-fa-chevron-left"></i>',
+            'text'    => '<em class="ai1ec-fa ai1ec-fa-chevron-left"></em>',
             'href'    => $href->generate_href(),
             'enabled' => $prev,
         );
@@ -490,7 +490,7 @@ class Ai1ec_Calendar_View_Agenda extends Ai1ec_Calendar_View_Abstract {
         );
         $links[] = array(
             'class'   => 'ai1ec-next-page',
-            'text'    => '<i class="ai1ec-fa ai1ec-fa-chevron-right"></i>',
+            'text'    => '<em class="ai1ec-fa ai1ec-fa-chevron-right"></em>',
             'href'    => $href->generate_href(),
             'enabled' => $next,
         );
@@ -541,7 +541,7 @@ class Ai1ec_Calendar_View_Agenda extends Ai1ec_Calendar_View_Abstract {
         $href = $this->_registry->get( 'html.element.href', $args );
         $links[] = array(
             'class' => 'ai1ec-prev-page',
-            'text' => '<i class="ai1ec-fa ai1ec-fa-chevron-left"></i>',
+            'text' => '<em class="ai1ec-fa ai1ec-fa-chevron-left"></em>',
             'href' => $href->generate_href(),
             'enabled' => $prev );
 
@@ -553,7 +553,7 @@ class Ai1ec_Calendar_View_Agenda extends Ai1ec_Calendar_View_Abstract {
         $href = $this->_registry->get( 'html.element.href', $args );
         $links[] = array(
             'class' => 'ai1ec-next-page',
-            'text' => '<i class="ai1ec-fa ai1ec-fa-chevron-right"></i>',
+            'text' => '<em class="ai1ec-fa ai1ec-fa-chevron-right"></em>',
             'href' => $href->generate_href(),
             'enabled' => $next );
 
