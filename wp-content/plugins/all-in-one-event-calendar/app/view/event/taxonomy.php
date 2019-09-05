@@ -313,7 +313,7 @@ class Ai1ec_View_Event_Taxonomy extends Ai1ec_Base {
             $tag = '<a ' . $data_type . ' class="ai1ec-tag ' . $class .
                 ' ai1ec-term-id-' . $tag->term_id . '" ' . $title .
                 'href="' . $href->generate_href() . '">' .
-                '<i class="ai1ec-fa ai1ec-fa-tag"></i>' .
+                '<em class="ai1ec-fa ai1ec-fa-tag"></em>' .
                 esc_html( $tag->name ) . '</a>';
         }
         return implode( ' ', $tags );
