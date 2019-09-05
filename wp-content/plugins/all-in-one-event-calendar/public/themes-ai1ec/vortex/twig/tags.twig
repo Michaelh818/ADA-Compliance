@@ -2,12 +2,12 @@
 	{% if selected_tag_ids is not empty %}ai1ec-active{% endif %}"
 	data-slug="tag">
 	<a class="ai1ec-dropdown-toggle" data-toggle="ai1ec-dropdown">
-		<i class="ai1ec-fa ai1ec-fa-tags"></i>
+		<em class="ai1ec-fa ai1ec-fa-tags"></em>
 		<span class="ai1ec-clear-filter ai1ec-tooltip-trigger"
 			data-href="{{ clear_filter }}"
 			{{ data_type | raw }}
 			title="{{ text_clear_tag_filter }}">
-			<i class="ai1ec-fa ai1ec-fa-times-circle"></i>
+			<em class="ai1ec-fa ai1ec-fa-times-circle"></em>
 		</span>
 		{{ text_tags }}
 		<span class="ai1ec-caret"></span>
