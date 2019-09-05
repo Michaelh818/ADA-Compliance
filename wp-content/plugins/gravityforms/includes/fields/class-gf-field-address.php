@@ -45,7 +45,7 @@ class GF_Field_Address extends GF_Field {
 				return;
 			}
 
-			$street  = rgpost( 'input_' . $this->id . '_1' );
+			$street  = rgpost( 'input_' . $this->id . '_0' );
 			$city    = rgpost( 'input_' . $this->id . '_3' );
 			$state   = rgpost( 'input_' . $this->id . '_4' );
 			$zip     = rgpost( 'input_' . $this->id . '_5' );
@@ -173,13 +173,13 @@ class GF_Field_Address extends GF_Field {
 		if ( $is_admin || ! rgar( $address_street_field_input, 'isHidden' ) ) {
 			if ( $is_sub_label_above ) {
 				$street_address = " <span class='ginput_full{$class_suffix} address_line_1' id='{$field_id}_1_container' {$style}>
-                                        <label for='{$field_id}_1' id='{$field_id}_1_label' {$sub_label_class_attribute}>{$address_street_sub_label}</label>
-                                        <input type='text' name='input_{$id}.1' id='{$field_id}_1' value='{$street_value}' {$tabindex} {$disabled_text} {$street_placeholder_attribute}/>
+                                        <label for='{$field_id}_0' id='{$field_id}_1_label' {$sub_label_class_attribute}>{$address_street_sub_label}</label>
+                                        <input type='text' name='input_{$id}.1' id='{$field_id}_0' value='{$street_value}' {$tabindex} {$disabled_text} {$street_placeholder_attribute}/>
                                     </span>";
 			} else {
 				$street_address = " <span class='ginput_full{$class_suffix} address_line_1' id='{$field_id}_1_container' {$style}>
-                                        <input type='text' name='input_{$id}.1' id='{$field_id}_1' value='{$street_value}' {$tabindex} {$disabled_text} {$street_placeholder_attribute}/>
-                                        <label for='{$field_id}_1' id='{$field_id}_1_label' {$sub_label_class_attribute}>{$address_street_sub_label}</label>
+                                        <input type='text' name='input_{$id}.1' id='{$field_id}_0' value='{$street_value}' {$tabindex} {$disabled_text} {$street_placeholder_attribute}/>
+                                        <label for='{$field_id}_0' id='{$field_id}_1_label' {$sub_label_class_attribute}>{$address_street_sub_label}</label>
                                     </span>";
 			}
 		}
@@ -550,10 +550,10 @@ class GF_Field_Address extends GF_Field {
 				esc_html__( 'Congo, Democratic Republic of the', 'gravityforms' ),
 				esc_html__( 'Congo, Republic of the', 'gravityforms' ),
 				esc_html__( 'Costa Rica', 'gravityforms' ),
-				esc_html__( "Côte d'Ivoire", 'gravityforms' ),
+				esc_html__( "C么te d'Ivoire", 'gravityforms' ),
 				esc_html__( 'Croatia', 'gravityforms' ),
 				esc_html__( 'Cuba', 'gravityforms' ),
-				esc_html__( 'Curaçao', 'gravityforms' ),
+				esc_html__( 'Cura莽ao', 'gravityforms' ),
 				esc_html__( 'Cyprus', 'gravityforms' ),
 				esc_html__( 'Czech Republic', 'gravityforms' ),
 				esc_html__( 'Denmark', 'gravityforms' ),
@@ -774,10 +774,10 @@ class GF_Field_Address extends GF_Field {
 			esc_html__( 'CONGO, DEMOCRATIC REPUBLIC OF THE', 'gravityforms' ) => 'CD',
 			esc_html__( 'CONGO, REPUBLIC OF THE', 'gravityforms' )            => 'CG',
 			esc_html__( 'COSTA RICA', 'gravityforms' )                        => 'CR',
-			esc_html__( "CÔTE D'IVOIRE", 'gravityforms' )                     => 'CI',
+			esc_html__( "C脭TE D'IVOIRE", 'gravityforms' )                     => 'CI',
 			esc_html__( 'CROATIA', 'gravityforms' )                           => 'HR',
 			esc_html__( 'CUBA', 'gravityforms' )                              => 'CU',
-			esc_html__( 'CURAÇAO', 'gravityforms' )                           => 'CW',
+			esc_html__( 'CURA脟AO', 'gravityforms' )                           => 'CW',
 			esc_html__( 'CYPRUS', 'gravityforms' )                            => 'CY',
 			esc_html__( 'CZECH REPUBLIC', 'gravityforms' )                    => 'CZ',
 			esc_html__( 'DENMARK', 'gravityforms' )                           => 'DK',
