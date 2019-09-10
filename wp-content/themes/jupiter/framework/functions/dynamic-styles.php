@@ -188,7 +188,8 @@ class Mk_Static_Files {
 		if ( ARTBEES_VC_FRONTEND ) {
 			$minifier = new SimpleCssMinifier();
 			$output = $minifier->minify( $app_styles );
-			echo '<style id="mk-shortcode-style-' . $css_id . '" type="text/css">' . $output . '</style>';
+			// echo '<style id="mk-shortcode-style-' . $css_id . '" type="text/css">' . $output . '</style>';
+			echo '<style type="text/css">' . $output . '</style>';
 			return;
 		}
 
@@ -199,7 +200,8 @@ class Mk_Static_Files {
 		if ( self::is_referer_admin_ajax() ) {
 			$minifier = new SimpleCssMinifier();
 			$output   = $minifier->minify( $app_styles );
-			echo '<style id="mk-shortcode-style-' . $css_id . '" type="text/css">' . $output . '</style>';
+			// echo '<style id="mk-shortcode-style-' . $css_id . '" type="text/css">' . $output . '</style>';
+			echo '<style type="text/css">' . $output . '</style>';
 		}
 
 	}
