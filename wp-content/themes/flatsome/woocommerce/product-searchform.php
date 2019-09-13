@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				$selected_category = ( isset( $_REQUEST['product_cat'] ) ) ? $_REQUEST['product_cat'] : '';
 
-				echo '<select class="search_categories resize-select mb-0" name="product_cat">';
+				echo '<label for="sortby" style="display:none;">Sort By</label><select id="sortby" class="search_categories resize-select mb-0" name="product_cat">';
 				echo '<option value=""'.selected( '', $selected_category, false ).'>'.__( 'All', 'flatsome' ).'</option>';
 
 				foreach ($product_categories as $value) {
