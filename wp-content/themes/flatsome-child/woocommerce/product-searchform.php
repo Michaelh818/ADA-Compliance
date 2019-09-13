@@ -44,6 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				if(get_theme_mod('search_placeholder')) $placeholder = get_theme_mod('search_placeholder');
 			?>
 			<div class="flex-col flex-grow">
+			  <label style="display:none;" for="s">Search</label>
 			  <input type="search" class="search-field mb-0" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php echo $placeholder; ?>" />
 		    <input type="hidden" name="post_type" value="product" />
         <?php if ( defined( 'ICL_LANGUAGE_CODE' ) ): ?>
