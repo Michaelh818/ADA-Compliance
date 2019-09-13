@@ -68,7 +68,7 @@
 <div class="ai1ec-suggested-no-results">
 
     <h4>
-        <i class="ai1ec-fa ai1ec-fa-times-circle"></i>
+        <em class="ai1ec-fa ai1ec-fa-times-circle"></em>
         <?php _e( 'No events found.', AI1EC_PLUGIN_NAME ); ?>
     </h4>
     <p class="ai1ec-suggested-results-hint">

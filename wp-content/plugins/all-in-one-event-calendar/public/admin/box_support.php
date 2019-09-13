@@ -54,7 +54,7 @@
                 <a href="https://time.ly/blog?utm_source=dashboard&nbsp;utm_medium=blog&nbsp;utm_term=ai1ec-pro&nbsp;utm_content=1.11.4&nbsp;utm_campaign=news"
                     target="_blank">
                     <?php _e( 'view all news', AI1EC_PLUGIN_NAME ); ?>
-                    <i class="ai1ec-fa ai1ec-fa-arrow-right"></i>
+                    <em class="ai1ec-fa ai1ec-fa-arrow-right"></em>
                 </a>
             </small>
         </h2>
