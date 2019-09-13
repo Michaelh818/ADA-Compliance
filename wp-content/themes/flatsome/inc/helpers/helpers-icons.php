@@ -2,7 +2,7 @@
 
 function get_flatsome_icon($name, $size = null){
   if($size) $size = 'style="font-size:'.$size.';"';
-  return '<i class="'.$name.'" '.$size.'></i>';
+  return '<em class="'.$name.'" '.$size.'></em>';
 }
 
 // Lazy load icons
