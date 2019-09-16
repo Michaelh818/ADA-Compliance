@@ -49,7 +49,7 @@ if ( function_exists( 'wc_get_account_menu_items' ) && get_theme_mod( 'wc_accoun
 						?>
 						<a href="<?php echo esc_url( $facebook_url ); ?>"
 						   class="button social-button large facebook circle"
-						   onclick="window.location = '<?php echo esc_url( $facebook_url ); ?>'+window.location.href return false"><i class="icon-facebook"></i>
+						   onclick="window.location = '<?php echo esc_url( $facebook_url ); ?>'+window.location.href return false"><em class="icon-facebook"></em>
 							<span><?php _e( 'Login with <strong>Facebook</strong>', 'flatsome' ); ?></span></a>
 					<?php } ?>
 
@@ -59,7 +59,7 @@ if ( function_exists( 'wc_get_account_menu_items' ) && get_theme_mod( 'wc_accoun
 						<a class="button social-button large google-plus circle"
 						   href="<?php echo esc_url( $google_url ); ?>"
 						   onclick="window.location = '<?php echo esc_url( $google_url ); ?>'+window.location.href return false">
-							<i class="icon-google-plus"></i>
+							<em class="icon-google-plus"></em>
 							<span><?php _e( 'Login with <strong>Google</strong>', 'flatsome' ); ?></span></a>
 					<?php } ?>
 
