@@ -26,10 +26,11 @@ $calculator_text          = '';
 ?>
 <tr class="woocommerce-shipping-totals shipping <?php if ( get_theme_mod( 'cart_boxed_shipping_labels', 0 ) && 1 < count( $available_methods ) ) echo 'shipping--boxed'; ?>">
 	<td class="shipping__inner" colspan="2">
+		<fieldset>
 		<table class="shipping__table <?php if ( 1 < count( $available_methods ) ) : ?>shipping__table--multiple<?php endif; ?>">
 			<tbody>
 			<tr>
-				<td <?php if ( 1 < count( $available_methods ) ) : ?> colspan="2" <?php endif; ?>><?php echo wp_kses_post( $package_name ); ?></td>
+				<td class="tdToTh" <?php if ( 1 < count( $available_methods ) ) : ?> colspan="2" <?php endif; ?>><legend><?php echo wp_kses_post( $package_name ); ?></legend></td>
 				<td data-title="<?php echo esc_attr( $package_name ); ?>">
 					<?php if ( $available_methods ) : ?>
 						<ul id="shipping_method" class="shipping__list woocommerce-shipping-methods">
@@ -83,5 +84,6 @@ $calculator_text          = '';
 			</tbody>
 			</tr>
 		</table>
+		</fieldset>
 	</td>
 </tr>
