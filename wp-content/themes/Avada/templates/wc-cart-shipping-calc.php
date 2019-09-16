@@ -27,6 +27,7 @@ if ( get_option( 'woocommerce_enable_shipping_calc' ) === 'no' || ! WC()->cart->
 
 		<?php if ( apply_filters( 'woocommerce_shipping_calculator_enable_country', true ) ) : ?>
 			<p class="form-row form-row-wide" id="calc_shipping_country_field">
+				<label for="calc_shipping_country" style="display:none;"> Shipping Country </label>
 				<select name="calc_shipping_country" id="calc_shipping_country" class="country_to_state" rel="calc_shipping_state">
 					<option value=""><?php esc_html_e( 'Select a country&hellip;', 'woocommerce' ); ?></option>
 					<?php
@@ -46,6 +47,7 @@ if ( get_option( 'woocommerce_enable_shipping_calc' ) === 'no' || ! WC()->cart->
 				$states     = WC()->countries->get_states( $current_cc );
 				?>
 
+				<label for="calc_shipping_state" style="display:none;"> Shipping State </label>
 				<?php if ( is_array( $states ) && empty( $states ) ) : // Hidden Input. ?>
 
 					<input type="hidden" name="calc_shipping_state" id="calc_shipping_state" placeholder="<?php esc_attr_e( 'State / county', 'woocommerce' ); ?>" />
@@ -74,7 +76,8 @@ if ( get_option( 'woocommerce_enable_shipping_calc' ) === 'no' || ! WC()->cart->
 		<?php if ( apply_filters( 'woocommerce_shipping_calculator_enable_city', true ) ) : ?>
 
 			<p id="calc_shipping_city_field" class="form-row form-row-wide fusion-layout-column fusion-one-half fusion-spacing-yes fusion-column-last">
-				<input type="text" class="input-text" value="<?php echo esc_attr( WC()->customer->get_shipping_city() ); ?>" placeholder="<?php esc_attr_e( 'City', 'woocommerce' ); ?>" name="calc_shipping_city" id="calc_shipping_city" />
+				<label for="shipping_city" style="display:none;"> Shipping City </label>
+				<input id="shipping_city" type="text" class="input-text" value="<?php echo esc_attr( WC()->customer->get_shipping_city() ); ?>" placeholder="<?php esc_attr_e( 'City', 'woocommerce' ); ?>" name="calc_shipping_city" id="calc_shipping_city" />
 			</p>
 
 		<?php endif; ?>
@@ -82,7 +85,8 @@ if ( get_option( 'woocommerce_enable_shipping_calc' ) === 'no' || ! WC()->cart->
 		<?php if ( apply_filters( 'woocommerce_shipping_calculator_enable_postcode', true ) ) : ?>
 
 			<div id="calc_shipping_postcode_field" class="form-row form-row-wide fusion-layout-column fusion-one-half fusion-spacing-yes fusion-column-last">
-				<input type="text" class="input-text" value="<?php echo esc_attr( WC()->customer->get_shipping_postcode() ); ?>" placeholder="<?php esc_attr_e( 'Postcode / ZIP', 'woocommerce' ); ?>" name="calc_shipping_postcode" id="calc_shipping_postcode" />
+				<label for="shipping_postcode" style="display:none;"> Shipping Post Code</label>
+				<input id="shipping_postcode" type="text" class="input-text" value="<?php echo esc_attr( WC()->customer->get_shipping_postcode() ); ?>" placeholder="<?php esc_attr_e( 'Postcode / ZIP', 'woocommerce' ); ?>" name="calc_shipping_postcode" id="calc_shipping_postcode" />
 			</div>
 
 		<?php endif; ?>
