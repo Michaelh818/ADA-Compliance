@@ -25,7 +25,7 @@ $behavior .= $auto_open ? ' auto_show="' . $auto_show . '"' : '';
   title="<?php echo $title; ?>">
   
   <?php if($icon_style) { ?>
-    <i class="icon-envelop"></i>
+    <em class="icon-envelop"></em>
   <?php } ?>
 
   <?php if($label) { ?>

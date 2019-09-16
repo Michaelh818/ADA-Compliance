@@ -6,7 +6,7 @@
 
   <a href="#header-newsletter-signup" class="tooltip" title="<?php echo $title; ?>">
 
-    <i class="icon-envelop"></i>
+    <em class="icon-envelop"></em>
     <span class="header-newsletter-title">
       <?php echo $label; ?>
     </span>
