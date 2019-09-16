@@ -39,9 +39,13 @@ if ( ! function_exists( 'flatsome_wishlist_account_item' ) ) {
 		}
 
 		$wishlist_page = yith_wcwl_object_id( $page_id );
+		// <a href="/"></a> if "/" this isn't happening anymore, not sure whats going on I am going to wait before commiting this
 		?>
 		<li class="wishlist-account-element <?php if ( is_page( $wishlist_page ) ) echo 'active'; ?>">
-			<a href="<?php echo YITH_WCWL()->get_wishlist_url(); ?>"><?php echo get_the_title( $wishlist_page ); ?></a>
+			<?php if ( YITH_WCWL()->get_wishlist_url() != "/" ) {?>
+				<a href="<?php echo YITH_WCWL()->get_wishlist_url(); ?>"><?php echo get_the_title( $wishlist_page ); ?></a>
+			<?php}?>
+			
 		</li>
 		<?php
 	}
