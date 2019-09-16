@@ -13,6 +13,23 @@
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
  * @version 3.3.0
+ * 
+ * 
+ * notes: additional css needed for customizations 
+ */
+
+/* 
+.tdToTh, td#Shipping {
+    font-size: 85%;
+    text-transform: inherit;
+    letter-spacing: 0;
+    line-height: 1.05;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: left !important;
+    color: #000;
+}
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -53,13 +70,13 @@ defined( 'ABSPATH' ) || exit;
 	<tfoot>
 
 		<tr class="cart-subtotal">
-			<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+			<td class="tdToTh"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
+				<td class="tdToTh"><?php wc_cart_totals_coupon_label( $coupon ); ?></td>
 				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
 			</tr>
 		<?php endforeach; ?>
@@ -76,7 +93,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee">
-				<th><?php echo esc_html( $fee->name ); ?></th>
+				<td class="tdToTh"><?php echo esc_html( $fee->name ); ?></td>
 				<td><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
@@ -85,13 +102,13 @@ defined( 'ABSPATH' ) || exit;
 			<?php if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 					<tr class="tax-rate tax-rate-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-						<th><?php echo esc_html( $tax->label ); ?></th>
+						<td class="tdToTh"><?php echo esc_html( $tax->label ); ?></td>
 						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
 				<?php endforeach; ?>
 			<?php else : ?>
 				<tr class="tax-total">
-					<th><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
+					<td class="tdToTh"><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></td>
 					<td><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 			<?php endif; ?>
@@ -100,7 +117,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+			<td class="tdToTh"><?php esc_html_e( 'Total', 'woocommerce' ); ?></td>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 
