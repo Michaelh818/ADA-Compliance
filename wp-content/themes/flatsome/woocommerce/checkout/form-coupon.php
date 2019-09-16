@@ -32,6 +32,7 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 	<div class="coupon">
 		<div class="flex-row medium-flex-wrap">
 			<div class="flex-col flex-grow">
+				<label for="coupon_code" style="display:none;">Coupon Code</label>
 				<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
 			</div>
 			<div class="flex-col">
