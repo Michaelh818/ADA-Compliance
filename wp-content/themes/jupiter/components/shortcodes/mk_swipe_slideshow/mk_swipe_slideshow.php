@@ -63,7 +63,7 @@ if ( ($global_lazyload == 'true' && $disable_lazyload == 'false') || ($global_la
 		<?php } ?>
 
 		<!-- empty PNG to stretch slider and make it responsive outside of js as the slider adjusts height and width to container sizes  -->
-		<img src="<?php echo Mk_Image_Resize::generate_dummy_image($image_width, $image_height, true); ?>" class="mk-slider-holder-img" />
+		<img alt="empty PNG" src="<?php echo Mk_Image_Resize::generate_dummy_image($image_width, $image_height, true); ?>" class="mk-slider-holder-img" />
 
 	</div>
 </div>

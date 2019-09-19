@@ -122,7 +122,7 @@ $output .= '    >';
 $output .= '        '.$effectsLayer;
 $output .= '        <div class="mk-page-title-box-content" '.$content_opacity.'>';
 $output .= '            <div class="mk-grid">';
-$output .= '                <h1 class="mk-page-title-box-title'. $underline_class .'">' .$page_title. '</h1>';
+$output .= '                <h2 class="mk-page-title-box-title'. $underline_class .'">' .$page_title. '</h2>';
 $output .= '                <div class="mk-page-title-box-subtitle">' .$page_subtitle. '</div>';
 $output .= '            </div>';
 $output .= '        </div><!-- mk-page-title-box-content -->';
